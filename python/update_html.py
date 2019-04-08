@@ -18,21 +18,21 @@ df = pd.read_csv(path)
 safe_raised = str(df.groupby('url')['amount'].sum()['https://www.gofundme.com/f/safe-embarcadero-for-all'])
 safe_donors = str(df.groupby('url')['url'].count()['https://www.gofundme.com/f/safe-embarcadero-for-all'])
 safe_median = str(df[df['url']=='https://www.gofundme.com/f/safe-embarcadero-for-all'].sort_values(by='amount').reset_index(drop=True).loc[round(int(safe_donors)/2),'amount'])
-safe_under = str(len(df[(df['url']=='https://www.gofundme.com/f/safe-embarcadero-for-all')&(df['amount']<=100)]))
+safe_under = str(round(len(df[(df['url']=='https://www.gofundme.com/f/safe-embarcadero-for-all')&(df['amount']<100)])/int(safe_donors)*100))
 safer_raised = str(df.groupby('url')['amount'].sum()['https://www.gofundme.com/safer-embarcadero-for-all'])
 safer_donors = str(df.groupby('url')['url'].count()['https://www.gofundme.com/safer-embarcadero-for-all'])
 safer_median = str(df[df['url']=='https://www.gofundme.com/safer-embarcadero-for-all'].sort_values(by='amount').reset_index(drop=True).loc[round(int(safe_donors)/2),'amount'])
-safer_under = str(len(df[(df['url']=='https://www.gofundme.com/safer-embarcadero-for-all')&(df['amount']<=100)]))
+safer_under = str(round(len(df[(df['url']=='https://www.gofundme.com/safer-embarcadero-for-all')&(df['amount']<100)])/int(safer_donors)*100))
 
 dct = {
        'safe-raised':''.join(['$', safe_raised[:-3], ',', safe_raised[-3:]]),
        'safe-donors':safe_donors,
        'safe-median':''.join(['$',safe_median]),
-       'safe-under':safe_under,
+       'safe-under':''.join([safe_under,'%']),
        'safer-raised':''.join(['$', safer_raised[:-3], ',', safer_raised[-3:]]),
        'safer-donors':''.join([safer_donors[:-3],',',safer_donors[-3:]]),
        'safer-median':''.join(['$',safer_median]),
-       'safer-under':''.join([safer_under[:-3],',',safer_under[-3:]])
+       'safer-under':''.join([safer_under,'%'])
        }
 
 
