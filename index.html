@@ -19,17 +19,19 @@
     }
 
     .pad-top {
-        margin-top: 5%
+        margin-top: 5%;
     }
 
     .jumbotron-safe {
         background-image: url('images/skyline.jpg');
         background-size: cover;
+        opacity: 0.8;
     }
 
     .jumbotron-safer {
         background-image: url('images/skyline2.jpg');
         background-size: cover;
+        opacity: 0.8;
     }
 
     .circle {
@@ -105,7 +107,7 @@
 <body>
     <section id="landing-page-1">
         <div class="copy">
-            <h1> San Francisco has among the highest rate of homelessness in the United States, with 4300 people living unsheltered and 1100 people on the shelter waiting list. </h1>
+            <h1> San Francisco has among the highest rate of homelessness in the United States, with 4300 people living unsheltered and <a href="https://sf311.org/information/waitlist"><span id="socrata">over 1000</span> people</a> on the shelter waiting list. </h1>
             <div class="scroll">
                 <a href="#landing-page-2"> <span class="glyphicon glyphicon-circle-arrow-down"></span>
                     <div> READ MORE </div>
@@ -259,7 +261,9 @@
             </div>
         </div>
     </div>
+    
     <!-- <div class="circle" style="position: absolute;">VS</div> -->
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -268,6 +272,20 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <!-- Script to pull shelter waiting list data from sfgov.org -->
+    <script>
+    $.ajax({
+        url: "https://data.sfgov.org/resource/w4sk-nq57.json",
+        type: "GET",
+        data: {
+            "$limit": 5000
+        }
+    }).done(function(data) {
+        $("#socrata").html(data.length);
+        console.log(data);
+    });
+    </script>
 </body>
 
 </html>
