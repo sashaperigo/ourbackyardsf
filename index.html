@@ -1,232 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<!-- Bootstrap CSS -->
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
-<style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Palanquin');
-      
-      html {
-      scroll-behavior: smooth;
-      }
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Palanquin');
 
-      .container-fluid {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container-fluid {
         height: 100vh;
-      }
-      .pad-top {
+    }
+
+    .pad-top {
         margin-top: 5%
-      }
-
-      .jumbotron-safe{
-       background-image: url('images/skyline.jpg');
-       background-size: cover;
-      }
-      .jumbotron-safer{
-       background-image: url('images/skyline2.jpg');
-       background-size: cover;
-      }
-
-      .circle {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      font-size: 15px;
-      color: #000;
-      line-height: 50px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.4);
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -40%);
     }
 
-      .textstyle-h1 {
-      font-family: 'Palanquin', sans-serif;
-      text-align: center;
-      font-weight: bolder;
-      color: white;
-    }
-      .textstyle {
-      font-family: 'Palanquin', sans-serif;
-      text-align: center;
-      font-weight: bolder;
-      color: white;
-    }
-      .textstyle-btn {
-      font-family: 'Palanquin', sans-serif;
-      text-align: center;
-      font-weight: bolder;
-      color: gray;
+    .jumbotron-safe {
+        background-image: url('images/skyline.jpg');
+        background-size: cover;
     }
 
-    #landing-page-1{
-      background-image: url('https://disside.com/wp-content/uploads/2017/04/placeholder-big-dark-2.gif');
+    .jumbotron-safer {
+        background-image: url('images/skyline2.jpg');
+        background-size: cover;
     }
 
-    .copy{
-     font-family: 'Palanquin', sans-serif;
-     color: white; 
-     text-align: center;
-     padding: 5%; 
-     font-size: 2em; 
+    .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 15px;
+        color: #000;
+        line-height: 50px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.4);
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
     }
 
-    .scroll{
-      text-align: center;
+    .textstyle-h1 {
+        font-family: 'Palanquin', sans-serif;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
     }
 
-    .scroll > a {
-      color: white;  
-      font-size: 2vh; 
+    .textstyle {
+        font-family: 'Palanquin', sans-serif;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .textstyle-btn {
+        font-family: 'Palanquin', sans-serif;
+        text-align: center;
+        font-weight: bolder;
+        color: gray;
+    }
+
+    #landing-page-1 {
+        background-image: url('https://disside.com/wp-content/uploads/2017/04/placeholder-big-dark-2.gif');
+    }
+
+    .copy {
+        font-family: 'Palanquin', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 5%;
+        font-size: 2em;
+    }
+
+    .scroll {
+        text-align: center;
+    }
+
+    .scroll>a {
+        color: white;
+        font-size: 2vh;
     }
 
     .glyphicon {
-    font-size: 50px;
+        font-size: 50px;
     }
 
-    #landing-page-2{
-      background-image: url('https://www.solidbackgrounds.com/images/1024x768/1024x768-gray-solid-color-background.jpg');
-    }    
+    #landing-page-2 {
+        background-image: url('https://www.solidbackgrounds.com/images/1024x768/1024x768-gray-solid-color-background.jpg');
+    }
 
-    #landing-page-3{
-      background-image: url('https://disside.com/wp-content/uploads/2017/04/placeholder-big-dark-2.gif');
+    #landing-page-3 {
+        background-image: url('https://disside.com/wp-content/uploads/2017/04/placeholder-big-dark-2.gif');
     }
     </style>
 </head>
+
 <body>
-<section id="landing-page-1">
-<div class="copy">
-<h1> San Francisco has among the highest rate of homelessness in the United States, with 4300 people living unsheltered and 1100 people on the shelter waiting list. </h1>
-<div class="scroll">
-<a href="#landing-page-2"> <span class="glyphicon glyphicon-circle-arrow-down"></span>
-<div> READ MORE </div></a>
-</div>
-</div>
-</section>
-<section id="landing-page-2">
-<div class="copy">
-<div class="row">
-<div class="col-6"> Nearly 90% of homeless housing is concentrated in 15% of the neighborhoods in San Francisco. </div>
-<div class="col-6"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW0tLT///+vr6+urq6+vr7q6urIyMj09PT39/f8/Py5ubnLy8vV1dXi4uLHx8fd3d3R0dHv7+/n5+fgQ8uQAAADsElEQVR4nO3W246cOhBGYR85g6Hf/2F3VdnQ9J5JpGhQbrI+jdTAYOMf7ALnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCvCOHnZzxv6rpukt+t6zY7sLXfJP/otnQO6bab0vRuP3epbYVtKfPZpZonaZVqn/oT3F6W2TpMKV3ttV8XzksoG41I7okb0nnvS3BRfkbrTzY0QFh8VfOGXPeGyQXv56v57n0f6y0Y7ARJMLeWPoXDH9JpGPwarh7ljND7Vx18bKfKEEI528XzqF8eiLhJPzKKpKMPLVhpG698yN6ZcMi5lzzhnjD2GkS3JtlYy6ixJGFWR5JWWfvqJaF2OJR11NZ24Ex45DzqNSXhaO1yiKPvsx1O3435TxNKP3r50RLKkOVZtIQxRHnEXUuYZVdu88czlBtjz0f/P+oqk3Bx1g6VuyeUfx1RDvYyVz4SztLvKhNHEg6xtpOES7TeHniIkvDwW8z+ZQllyMkSWEKnk3Y/E8qIZx3JO6EMqt/rDWmD0ZWqCeOVULbktq1xabNBut/iPaH1L83jl4ThqYSLL3ohTRhWuUrWaasJ3ZRymyg6VtnV53tPKCMJNsZ0LlghCQeVgz7ZXoyScPWjLVgd9peEUc8orV3RWZqXUvpaEn6eMPle/mZLqJfvtOOr0uTQEp5r/5ZQsrj40lqTbkvmrDR9uFrJ+OW00BKWLwmlFr3iWWlWTWjG7ZlKI1cpvlhCGdyyz7butTCMw9GmiY5Vd+dwW4dafua9aLjrGQZLOBl78pO8XPrbM3S/eYaDq+1k97XLgp2eeFtoQunLd5owHFfBtnWoa+EKk3XXuXuluZ6QPlirwGu/6GJ171a1fK1xr085dL9Yh7utw9rO1mEcHpmkllCnR5B1GKXk51XoS6tVms+xupqwqxVB2unZhy7Ol9agmDTtL2tpr9V2bLW01qJ3LXX/q6VBX0B9/H7Uf5pw0640Yaljk1t8xN8lHLR8DLZ45HQZya4B5C1or09J2NsJe7y/D/fzjE0PWAUa5mid1fVdznapJtSbvP98nnYaxNssGuVy9qmhXU9fEh7vhO3jpK09fYfKHe/tmye9K43MtI9vmtnqx7DZN021t6+Xcbl/06RY53x8ppjqF6J+aUpFeH9xysaUPr4npvfHaGquM+pGTPue4scJZ6vWb/jmjPpjC3w6j74/fT8+gQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg3/Mft/Udq477nKEAAAAASUVORK5CYII="/> </div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="scroll">
-<a href="#landing-page-2"> <span class="glyphicon glyphicon-circle-arrow-down"></span>
-<div> SEE THE CONTROVERSY </div></a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="landing-page-3">
-<div class="copy">
-<p>    
-    A SF government-proposed 225 bed homeless shelter in a neighborhood with no homeless housing is in the heart
-    of a debate amongst residents about how to solve our homeless crisis.</p>
-<p> Take a moment to learn the opposing ("safe") and supporting ("safer") campaigns, and consider making a donation to the one that inspires, 
-      and share this site on social media. </p>
-</div>
-</section>
-<div class="container-fluid" style="position: absolute;">
-<div class="row h-100">
-<div class="col jumbotron-safe textstyle">
-<div class="row" style="margin-top: 15%">
-<div class="col">
-<h1>SAFE</h1>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<p>Here we have some text about the SAFE campaign</p>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<button class="btn btn-light textstyle-btn" type="button">Donate Now</button>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<p>Against: Here goes the argument for AGAINST</p>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<div class="row"> <p class="w-100">Raised</p> </div>
-<div class="row"> <h3 class="w-100" id="safe-raised">$98,120</h3> </div>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<div class="row"> <p class="w-100">Donors</p> </div>
-<div class="row"> <h3 class="w-100" id="safe-donors">349</h3> </div>
-</div>
-<div class="col">
-<div class="row"> <p class="w-100">Median Donation</p> </div>
-<div class="row"> <h3 class="w-100" id="safe-median">$100</h3> </div>
-</div>
-<div class="col">
-<div class="row"> <p class="w-100">Under $100</p> </div>
-<div class="row"> <h3 class="w-100" id="safe-under">36%</h3> </div>
-</div>
-</div>
-</div>
-<div class="col jumbotron-safer textstyle">
-<div class="row" style="margin-top: 15%">
-<div class="col">
-<h1>SAFER</h1>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<p>Here we have some text about the SAFER campaign</p>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<button class="btn btn-light textstyle-btn" type="button">Donate Now</button>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<p>For: Here goes the argument for FOR</p>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<div class="row"> <p class="w-100">Raised</p> </div>
-<div class="row"> <h3 class="w-100" id="safer-raised">$171,867</h3> </div>
-</div>
-</div>
-<div class="row pad-top">
-<div class="col">
-<div class="row"> <p class="w-100">Donors</p> </div>
-<div class="row"> <h3 class="w-100" id="safer-donors">1,874</h3> </div>
-</div>
-<div class="col">
-<div class="row"> <p class="w-100">Median Donation</p> </div>
-<div class="row"> <h3 class="w-100" id="safer-median">$10</h3> </div>
-</div>
-<div class="col">
-<div class="row"> <p class="w-100">Under $100</p> </div>
-<div class="row"> <h3 class="w-100" id="safer-under">84%</h3> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- <div class="circle" style="position: absolute;">VS</div> -->
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <section id="landing-page-1">
+        <div class="copy">
+            <h1> San Francisco has among the highest rate of homelessness in the United States, with 4300 people living unsheltered and 1100 people on the shelter waiting list. </h1>
+            <div class="scroll">
+                <a href="#landing-page-2"> <span class="glyphicon glyphicon-circle-arrow-down"></span>
+                    <div> READ MORE </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="landing-page-2">
+        <div class="copy">
+            <div class="row">
+                <div class="col-6"> Nearly 90% of homeless housing is concentrated in 15% of the neighborhoods in San Francisco. </div>
+                <div class="col-6"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEW0tLT///+vr6+urq6+vr7q6urIyMj09PT39/f8/Py5ubnLy8vV1dXi4uLHx8fd3d3R0dHv7+/n5+fgQ8uQAAADsElEQVR4nO3W246cOhBGYR85g6Hf/2F3VdnQ9J5JpGhQbrI+jdTAYOMf7ALnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCvCOHnZzxv6rpukt+t6zY7sLXfJP/otnQO6bab0vRuP3epbYVtKfPZpZonaZVqn/oT3F6W2TpMKV3ttV8XzksoG41I7okb0nnvS3BRfkbrTzY0QFh8VfOGXPeGyQXv56v57n0f6y0Y7ARJMLeWPoXDH9JpGPwarh7ljND7Vx18bKfKEEI528XzqF8eiLhJPzKKpKMPLVhpG698yN6ZcMi5lzzhnjD2GkS3JtlYy6ixJGFWR5JWWfvqJaF2OJR11NZ24Ex45DzqNSXhaO1yiKPvsx1O3435TxNKP3r50RLKkOVZtIQxRHnEXUuYZVdu88czlBtjz0f/P+oqk3Bx1g6VuyeUfx1RDvYyVz4SztLvKhNHEg6xtpOES7TeHniIkvDwW8z+ZQllyMkSWEKnk3Y/E8qIZx3JO6EMqt/rDWmD0ZWqCeOVULbktq1xabNBut/iPaH1L83jl4ThqYSLL3ohTRhWuUrWaasJ3ZRymyg6VtnV53tPKCMJNsZ0LlghCQeVgz7ZXoyScPWjLVgd9peEUc8orV3RWZqXUvpaEn6eMPle/mZLqJfvtOOr0uTQEp5r/5ZQsrj40lqTbkvmrDR9uFrJ+OW00BKWLwmlFr3iWWlWTWjG7ZlKI1cpvlhCGdyyz7butTCMw9GmiY5Vd+dwW4dafua9aLjrGQZLOBl78pO8XPrbM3S/eYaDq+1k97XLgp2eeFtoQunLd5owHFfBtnWoa+EKk3XXuXuluZ6QPlirwGu/6GJ171a1fK1xr085dL9Yh7utw9rO1mEcHpmkllCnR5B1GKXk51XoS6tVms+xupqwqxVB2unZhy7Ol9agmDTtL2tpr9V2bLW01qJ3LXX/q6VBX0B9/H7Uf5pw0640Yaljk1t8xN8lHLR8DLZ45HQZya4B5C1or09J2NsJe7y/D/fzjE0PWAUa5mid1fVdznapJtSbvP98nnYaxNssGuVy9qmhXU9fEh7vhO3jpK09fYfKHe/tmye9K43MtI9vmtnqx7DZN021t6+Xcbl/06RY53x8ppjqF6J+aUpFeH9xysaUPr4npvfHaGquM+pGTPue4scJZ6vWb/jmjPpjC3w6j74/fT8+gQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg3/Mft/Udq477nKEAAAAASUVORK5CYII=" /> </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="scroll">
+                        <a href="#landing-page-2"> <span class="glyphicon glyphicon-circle-arrow-down"></span>
+                            <div> SEE THE CONTROVERSY </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="landing-page-3">
+        <div class="copy">
+            <p>
+                A SF government-proposed 225 bed homeless shelter in a neighborhood with no homeless housing is in the heart
+                of a debate amongst residents about how to solve our homeless crisis.</p>
+            <p> Take a moment to learn the opposing ("safe") and supporting ("safer") campaigns, and consider making a donation to the one that inspires,
+                and share this site on social media. </p>
+        </div>
+    </section>
+    <div class="container-fluid" style="position: absolute;">
+        <div class="row h-100">
+            <div class="col jumbotron-safe textstyle">
+                <div class="row" style="margin-top: 15%">
+                    <div class="col">
+                        <h1>SAFE</h1>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <p>Here we have some text about the SAFE campaign</p>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <button class="btn btn-light textstyle-btn" type="button">Donate Now</button>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <p>Against: Here goes the argument for AGAINST</p>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Raised</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safe-raised">$98,120</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Donors</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safe-donors">349</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Median Donation</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safe-median">$100</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Under $100</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safe-under">36%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col jumbotron-safer textstyle">
+                <div class="row" style="margin-top: 15%">
+                    <div class="col">
+                        <h1>SAFER</h1>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <p>Here we have some text about the SAFER campaign</p>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <button class="btn btn-light textstyle-btn" type="button">Donate Now</button>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <p>For: Here goes the argument for FOR</p>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Raised</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safer-raised">$171,867</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Donors</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safer-donors">1,874</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Median Donation</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safer-median">$10</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p class="w-100">Under $100</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="w-100" id="safer-under">84%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="circle" style="position: absolute;">VS</div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
